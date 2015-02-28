@@ -1,0 +1,13 @@
+pushd `dirname $0` > /dev/null
+ROOT_DIR=`pwd`'/..';
+popd > /dev/null
+
+user=''
+password=''
+app_id=
+
+cd "${ROOT_DIR}"
+npm run build
+zip -r "${ROOT_DIR}/www.zip" "${ROOT_DIR}/public"
+curl -XPUT  -F "file=@${ROOT_DIR}/www.zip" -u "${user}:${password}" "https://build.phonegap.com/api/v1/apps/${app_id}"
+rm "${ROOT_DIR}/www.zip"

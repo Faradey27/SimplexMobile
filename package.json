@@ -1,0 +1,36 @@
+{
+  "name": "SimplexMobile",
+  "version": "0.0.1",
+  "description": "SimplexMobile",
+  "author": {
+    "name": "Andrii Tiertyshnyi",
+    "email": "andrii.tiertyshnyi@gmail.com",
+    "url": "https://github.com/Faradey27/SimplexMobile"
+  },
+  "private": true,
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack -d --watch --colors"
+  },
+  "dependencies": {
+    "bootstrap": "*",
+    "jquery": "*",
+    "lodash": "*",
+    "pubsub-js": "^1.5.0",
+    "react": "*",
+    "react-bootstrap": "*",
+    "react-tap-event-plugin": "*"
+  },
+  "devDependencies": {
+    "react-hot-loader": "*",
+    "css-loader": "*",
+    "jshint-loader": "*",
+    "json-loader": "*",
+    "jsx-loader": "*",
+    "less-loader": "*",
+    "style-loader": "*",
+    "traceur-loader": "*",
+    "url-loader": "*",
+    "webpack": "*"
+  }
+}
