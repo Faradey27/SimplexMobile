@@ -1,5 +1,4 @@
 node_modules/
-www/static/build/
 npm-debug.log
 etc/config.json
 bin/phonegap_build.sh
